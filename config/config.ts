@@ -116,20 +116,6 @@ export default {
         },
       ],
     },
-    {
-      path: '/user',
-      component: '../layouts/UserLayout',
-      // Routes: ['src/pages/Authorized'],
-      // authority: ['admin', 'user'],
-      // routes: [
-      //   {
-      //     path: '/user',
-      //     name: '用户',
-      //     icon: 'smile',
-      //     component: './user/User',
-      //   },
-      // ],
-    },
   ],
   // Theme for antd
   // https://ant.design/docs/react/customize-theme-cn
