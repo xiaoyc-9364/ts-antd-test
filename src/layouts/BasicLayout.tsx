@@ -18,7 +18,7 @@ import RightContent from '@/components/GlobalHeader/RightContent';
 import { connect } from 'dva';
 import { formatMessage } from 'umi-plugin-react/locale';
 import { isAntDesignPro } from '@/utils/utils';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo.svg';
 
 export interface BasicLayoutProps extends ProLayoutProps, ConnectProps {
   breadcrumbNameMap: {
@@ -49,7 +49,8 @@ const footerRender: BasicLayoutProps['footerRender'] = (_, defaultDom) => {
     return defaultDom;
   }
   return (
-    <>{defaultDom}
+    <>
+      {defaultDom}
       <div
         style={{
           padding: '0px 24px 24px',
@@ -64,7 +65,7 @@ const footerRender: BasicLayoutProps['footerRender'] = (_, defaultDom) => {
           />
         </a>
       </div>
-   </>
+    </>
   );
 };
 
